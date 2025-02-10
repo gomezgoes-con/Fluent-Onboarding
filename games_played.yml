@@ -9,3 +9,11 @@ fields:
     type: string
     sql: ${TABLE}.game
     description: Game played game
+
+  - name: num_plays
+    field_type: measure
+    type: sum
+    sql: ${num_playes}
+    description: Total games played
+    synonyms: ['total games played']
+    value_format_name: decimal_0
