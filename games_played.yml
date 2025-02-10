@@ -1,0 +1,11 @@
+version: 1
+name: games_played
+sql_table_name: fact_games_played
+description: Table containing information about the games played
+
+fields:
+  - name: game
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.game
+    description: Game played game
